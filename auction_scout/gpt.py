@@ -7,7 +7,7 @@ from openai import OpenAI
 
 
 class GPTNameChecker:
-    def __init__(self, model: str = "gpt-5-mini") -> None:
+    def __init__(self, model: str = "gpt-5-nano") -> None:
         api_key = os.environ.get("OPENAI_API_KEY")
         if not api_key:
             raise RuntimeError("OPENAI_API_KEY is not set in the environment.")
